@@ -5,18 +5,52 @@ html{
     box-shadow: 0 0 35px rgba(34, 5, 71, 0.4);
     border-radius: 50px;
 }
+.Encabezado:hover{
+    background-color: rgba(193, 179, 211, 0.308);
+}
 .Encabezado h1{
-    font-size: 3rem;
+    font-size: 5rem;
     text-align: center;
     color: rgba(154, 64, 214, 0.678);
 }
-.Tarjetas{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);    
-    border-radius: 5px;
-    height: 50px;
-    gap: 1rem;
+#articulo-contenedor{    
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding-bottom: 40px;
+    background-image: url(../imagenes/fondocontenedor.png);
+    padding: 150px;   
 }
+img {
+    width: 200px;
+    height: auto;
+    max-height: 200px;
+    object-fit: cover;
+}
+article{
+    padding: 10px;
+    border: 2px solid black;  
+    padding: 15px;              
+    border-radius: 10px;
+    background-color: rgb(220, 194, 241);    
+    color:rgb(0, 0, 0);
+    text-align: center;
+    background-image: url(../imagenes/fondoperros.png); 
+}
+#article{
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.2);
+}
+button{
+    width: 20px;
+    height: auto;
+}
+
 footer{    
-    text-align: center;    
+    box-shadow: 0 0 10px rgba(20, 1, 44, 0.4);
+    border-radius: 50px;    
 }
+footer p{
+    text-align: center;
+} 

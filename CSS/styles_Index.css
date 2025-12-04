@@ -2,11 +2,13 @@ html{
     font-family: "Sour Gummy", sans-serif;
 }
 .Tarjeta_encabezado{
-    background-color: rgb(231, 226, 240);   
+    background-image: url(../imagenes/fondo.avif);
+    background-size: cover;
+    background-repeat: no-repeat;
     border-radius: 50px;
     padding: 1rem;
     text-align: center;
-    box-shadow: 0 0 35px rgba(34, 5, 71, 0.4);
+    box-shadow: 0 0 35px rgba(33, 24, 44, 0.4);
     transition: transform 0.3s;
     color: rgb(120, 42, 165);    
 }
