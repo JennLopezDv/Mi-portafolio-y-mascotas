@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Sitio web de portafolio personal con página de mascotas">
@@ -9,45 +9,69 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./CSS/styles.css">       
-    </head>
+    <link rel="stylesheet" href="./CSS/styles_Index.css">       
+</head>
 
-    <body>
-        <div class="Tarjeta_encabezado">
+<body>
+    <div class="Tarjeta_encabezado">
         <img class="Imagen_encabezado" src="imagenes/Yo.jpeg" alt="Foto personal">
         <h1 class="Titulo_encabezado"> Jennifer López David</h1>
         <p class="Parrafo_encabezado">¡Bienvenidos a mi sitio web!</p>
+    </div>
+
+<header>      
+    <nav>
+        <ul>
+            <a href="#sobre-mi">Sobre mí</a>
+            <a href="#proyectos">Proyectos</a>
+            <a href="#contactos">Contactos</a>
+            <a href="./pagina/mascotas.html">Mascotas</a>                   
+        </ul>
+    </nav>
+</header>
+        
+<div class="secciones">    
+    <section id="sobre-mi">
+        <div>        
+        <h2>Sobre mí</h2>          
+        <p>Soy una estudiante de desarrollo de software, curiosa y dedicada, que cada día desea aprender algo nuevo. 
+            Me apasiona la tecnología y no temo enfrentarme a retos. Sueño con convertirme en una tesa en programación, dominando las herramientas y conocimientos necesarios para crear soluciones que marquen la diferencia.</p>
         </div>
-        <header class="Encabezados">         
-            
+    </section>      
 
-            <nav>
-                <ul>
-                    <li><a href="#sobre-mi">Sobre mí</a></li>
-                    <li><a href="#proyectos">Proyectos</a></li>
-                    <li><a href="#contactos">Contactos</a></li>
-                    <li><a href="./pagina/mascotas.html">Mascotas</a></li>                    
-                </ul>
-            </nav>
-        </header>
-
-        <section id="sobre-mi">
-            <h2>Sobre mí</h2>
-            <p> Estudiante de software, apasionada por la tecnología.</p>            
-        </section>
-
-        <section id="proyectos">
-            <h2>Proyectos</h2>
-                <ul>primera viñeta</ul>            
-                <ul>segunda viñeta</ul>
-                <ul>tercera viñeta</ul>            
-        </section>
-
-        <section id="contactos">
-            <h2>Contactos</h2>
-            <p></p>           
-        </section>
-
-    </body>
-
+    <section id="proyectos">
+        <div>        
+        <h2>Proyectos</h2>
+            <a href="#">Portafolio Web</a>
+            <a href="#">App de Tareas</a>
+            <a href="#">Generador de Paletas de Colores</a>
+            <a href="#">Blog Personal</a>                       
+        </div>
+    </section>
+    <section id="contacto">
+        <div>        
+        <h2 class="contacto_titulo">Contactos</h2>
+        <form>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" required></textarea>
+        <br>
+        <button type="submit">Enviar</button>
+        </form>
+        </div>           
+    </section>   
+    
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+    <footer>        
+            <p> © 2025 Jenn — Todos los derechos reservados</p>    
+    </footer>
+</body>
 </html>

@@ -1,0 +1,119 @@
+html{
+    font-family: "Sour Gummy", sans-serif;
+}
+.Tarjeta_encabezado{
+    background-color: rgb(231, 226, 240);   
+    border-radius: 50px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 0 35px rgba(34, 5, 71, 0.4);
+    transition: transform 0.3s;
+    color: rgb(120, 42, 165);    
+}
+.Tarjeta_encabezado:hover{
+    background-color: rgb(225, 216, 240); 
+}
+.Imagen_encabezado{
+    border-radius:200%;
+    height: auto;
+    width: 300px;    
+}
+nav a{
+    text-decoration: none;
+    margin-left: 145px;
+    margin-right: 145px;     
+    color: rgb(120, 42, 165);
+    font-size: 1.5rem;    
+}
+a:hover{
+    color: black;
+}
+nav {    
+    text-align: center;
+    box-shadow: 0 0 115px rgb(115, 69, 199);
+    border-radius: 50px;
+}
+.secciones{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);    
+    border-radius: 12px;
+    height: 200px;
+    gap: 1rem;
+}
+#sobre-mi{
+    padding: 8px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    grid-row: 1/3;
+    box-shadow: 0 0 10px rgba(235, 4, 4, 0.1);
+    transition: transform 0.5s ease, box-shadow 0.2s ease;
+    border-radius: 12px;
+    text-align: center;
+}
+#sobre-mi:hover{    
+    transform: translateY(-10px);
+    box-shadow: 0 0 35px rgba(26, 2, 58, 0.4);
+}
+#sobre-mi p{
+    padding: 1rem;
+}
+div h2{
+    text-align: center;
+}
+div a{
+    text-decoration: none;
+    color: rgb(17, 1, 48);
+    text-align: center;
+    padding: 10rem;
+    display: inline;   
+}
+#proyectos{    
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    grid-row: 1/3;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    transition: transform 0.5s ease, box-shadow 0.2s ease;
+    border-radius: 12px;
+    text-align: center;
+}
+#proyectos:hover{
+    box-shadow: 0 0 35px rgba(26, 2, 58, 0.4);  
+    transform: translateY(-10px);
+}
+#contacto{
+    padding: 8px;
+    display: flex;
+    justify-content: center;    
+    gap: 10px;
+    grid-row: 1/3;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    transition: transform 0.5s ease, box-shadow 0.2s ease;
+    border-radius: 12px;
+    text-align: center;
+}
+#contacto:hover{
+    box-shadow: 0 0 35px rgba(26, 2, 58, 0.4);
+    transform: translateY(-10px);
+}
+#contacto label, input{
+    padding: 5px;
+    text-align: left;
+    flex-direction: column;
+    display: flex;
+}
+.contacto_titulo {
+    text-align: center;
+} 
+form{
+ text-align: center;
+}
+footer{    
+    text-align: center;    
+}
+button{    
+    color: blueviolet;
+}
+
