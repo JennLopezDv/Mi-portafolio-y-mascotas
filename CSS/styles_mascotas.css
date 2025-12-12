@@ -22,6 +22,11 @@ html{
     background-image: url(../imagenes/fondocontenedor.png);
     padding: 150px;   
 }
+
+#articulo-contenedor article{
+    width: 367.61px;
+    height: 367.81px;
+}
 img {
     width: 200px;
     height: auto;

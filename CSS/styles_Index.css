@@ -2,12 +2,15 @@ html{
     font-family: "Sour Gummy", sans-serif;
 }
 .Tarjeta_encabezado{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-image: url(../imagenes/fondo.avif);
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 50px;
     padding: 1rem;
-    text-align: center;
+    align-items: center;
     box-shadow: 0 0 35px rgba(33, 24, 44, 0.4);
     transition: transform 0.3s;
     color: rgb(120, 42, 165);    
@@ -20,6 +23,13 @@ html{
     height: auto;
     width: 300px;    
 }
+nav {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    box-shadow: 0 0 115px rgb(115, 69, 199);
+    border-radius: 50px;
+}
 nav a{
     text-decoration: none;
     margin-left: 145px;
@@ -30,11 +40,7 @@ nav a{
 a:hover{
     color: black;
 }
-nav {    
-    text-align: center;
-    box-shadow: 0 0 115px rgb(115, 69, 199);
-    border-radius: 50px;
-}
+
 .secciones{
     display: grid;
     grid-template-columns: repeat(3, 1fr);    
@@ -63,28 +69,56 @@ nav {
 div h2{
     text-align: center;
 }
-div a{
-    text-decoration: none;
-    color: rgb(17, 1, 48);
-    text-align: center;
-    padding: 10rem;
-    display: inline;   
-}
-#proyectos{    
-    padding: 10px;
+
+#proyectos{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     gap: 5px;
     grid-row: 1/3;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     transition: transform 0.5s ease, box-shadow 0.2s ease;
-    border-radius: 12px;
-    text-align: center;
+    border-radius: 6px;
+    padding: 10px; 
+   
 }
 #proyectos:hover{
     box-shadow: 0 0 35px rgba(26, 2, 58, 0.4);  
     transform: translateY(-10px);
 }
+
+#proyectos div{
+    text-decoration: none;
+    color: rgb(17, 1, 48);
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 3px;
+    padding: 2rem;      
+}
+
+.pr {
+    border : 1px solid black;
+    text-decoration: none;
+}
+
+.p1{
+    grid-column: 1/2;    
+}
+.p2{
+    grid-column: 2/3;
+   
+}
+.p3{
+    grid-row: 2 /3;
+    grid-column: 1/2;
+}
+.p4{
+    grid-row: 2 /3;
+    grid-column: 2/3;
+}
+
+
 #contacto{
     padding: 8px;
     display: flex;
