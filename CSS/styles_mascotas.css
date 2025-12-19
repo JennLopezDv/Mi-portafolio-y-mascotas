@@ -28,10 +28,12 @@ html{
     height: 367.81px;
 }
 img {
-    width: 200px;
-    height: auto;
-    max-height: 200px;
+    max-width: 200px;
+    width: 100%;
+    /* height: auto; */
+    max-height: 200px; 
     object-fit: cover;
+
 }
 article{
     padding: 10px;
@@ -59,3 +61,18 @@ footer{
 footer p{
     text-align: center;
 } 
+
+/** ================= MÓVIL ================= **/
+@media (max-width: 768px){
+    #articulo-contenedor{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/** ================= TABLET ================= **/
+@media (min-width: 769px) and (max-width: 1024px){
+    #articulo-contenedor{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

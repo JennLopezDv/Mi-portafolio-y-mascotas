@@ -1,3 +1,9 @@
+:root{
+    --text: rgb(120, 42, 165); 
+    --fondo-header: white;
+}
+
+
 html{
     font-family: "Sour Gummy", sans-serif;
 }
@@ -13,7 +19,7 @@ html{
     align-items: center;
     box-shadow: 0 0 35px rgba(33, 24, 44, 0.4);
     transition: transform 0.3s;
-    color: rgb(120, 42, 165);    
+    color: var(--text)   
 }
 .Tarjeta_encabezado:hover{
     background-color: rgb(225, 216, 240); 
@@ -34,7 +40,7 @@ nav a{
     text-decoration: none;
     margin-left: 145px;
     margin-right: 145px;     
-    color: rgb(120, 42, 165);
+    color: var(--text);
     font-size: 1.5rem;    
 }
 a:hover{
@@ -152,4 +158,39 @@ footer{
 button{    
     color: blueviolet;
 }
+/** ================= MOVIL ================= **/
+@media (max-width: 768px){
 
+    /** Menú en columna **/
+    nav ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    /** Secciones en una columna **/
+    .secciones{
+        display: flex;
+        flex-direction: column;
+    }
+
+    /** Proyectos en una columna **/
+    #proyectos div{
+        grid-template-columns: 1fr;
+    }
+}
+
+/** ================= TABLET ================= **/
+@media (min-width: 769px) and (max-width: 1024px){
+
+    /** Secciones en dos columnas **/
+    .secciones{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /** Proyectos en dos columnas **/
+    #proyectos div{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
